@@ -1,0 +1,40 @@
+<!Doctype html><html>
+<head>
+	<title>RepoZilla</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<script type="text/javascript" src="content/js/jquery.js"></script>
+	<script type="text/javascript" src="content/js/repo.js"></script>
+	<style type="text/css">@import url(content/css/main.css);</style>
+	<meta name='theme-color' content='#F97C17'>
+</head>
+<body>
+	<header>
+		<nav>
+			<div id="nav">RepoZilla</div>
+		</nav>
+	</header>
+	<div id="content">
+		<form id="form" action="javascript:install()">
+			<div>
+				<select id="m">
+					<option value="host">Hosted APP</option>
+					<option value="pack">Packaged APP</option>
+				</select>
+			</div>
+			<div>
+				<textarea id="repo" placeholder="http://example.com/app/manifest.webapp"></textarea>
+			</div>
+			<div>
+				<button type="submit" id="installapp">Install</button>
+			</div>
+		</form>
+	</div>
+	<footer>
+		<div id="foot">
+			To install a APP, you need have a correct manifest in json format. Look at the <a class="link" href="https://github.com/amirtorrez/example-manifest" target="blank">manifest examples</a> for more info.
+			<br><br>
+			This APP is a test release.<br>APP by <a class="link" href="http://twitter.com/amirtorrez" target="blank">@amirtorrez</a>
+		</div>
+	</footer>
+</body>
+</html>
