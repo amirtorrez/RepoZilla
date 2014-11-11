@@ -5,11 +5,9 @@ function install(){
 		switch(scop){
 			case 'host':
 				var request = window.navigator.mozApps.install(manifestUrl);
-				var msgints = 'Installation successful!';
 			break;
 			case 'pack':
-				var request = navigator.mozApps.installPackage(manifestUrl,opt.data || {});
-				var msgints = 'Installation in process!';
+				var request = navigator.mozApps.installPackage(manifestUrl);
 			break;
 		}
 		request.onsuccess = function () {
